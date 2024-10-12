@@ -50,11 +50,11 @@ class Settings:
     SYSTEM_LOGO: str = os.getenv("SYSTEM_LOGO", "https://storage.googleapis.com/developers-bucket/developers-bucket/smart-conference-app/flyers/GI-KACE-Logo.jpeg")
 
 
-    MAIL_USERNAME: str = os.getenv("MAIL_USERNAME", 'dev.aiti.com.gh@gmail.com')
-    MAIL_PASSWORD: str = os.getenv("MAIL_PASSWORD", 'palvpbokbnisspps') #uefuovgtfwyfgskv previous password
-    MAIL_FROM: str = os.getenv("MAIL_FROM", "dev.aiti.com.gh@gmail.com")
-    MAIL_PORT: int = os.getenv("MAIL_PORT", 587)
-    MAIL_SERVER: str = os.getenv("MAIL_SERVER", 'smtp.gmail.com')
+    MAIL_USERNAME: str = os.getenv("MAIL_USERNAME")
+    MAIL_PASSWORD: str = os.getenv("MAIL_PASSWORD",) 
+    MAIL_FROM: str = os.getenv("MAIL_FROM",)
+    MAIL_PORT: int = os.getenv("MAIL_PORT", )
+    MAIL_SERVER: str = os.getenv("MAIL_SERVER", )
     MAIL_STARTTLS: bool = True
     MAIL_SSL_TLS: bool = os.getenv("MAIL_SSL_TLS", False)
     USE_CREDENTIALS: bool = True
